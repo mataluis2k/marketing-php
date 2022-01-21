@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Maropost\\Api\\": "src/"
+      "mataluis2k\\Api\\": "src/"
     }
   },
   "require-dev": {
