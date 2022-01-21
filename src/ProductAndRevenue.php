@@ -1,15 +1,15 @@
 <?php
 
-namespace Maropost\Api;
+namespace mataluis2k\marapost;
 
-use Maropost\Api\ResultTypes\GetResult;
-use Maropost\Api\Abstractions\Api;
-use Maropost\Api\Abstractions\OperationResult;
-use Maropost\Api\InputTypes\OrderItemInput;
+use mataluis2k\marapost\ResultTypes\GetResult;
+use mataluis2k\marapost\Abstractions\Api;
+use mataluis2k\marapost\Abstractions\OperationResult;
+use mataluis2k\marapost\InputTypes\OrderItemInput;
 
 /**
  * Class ProductAndRevenue
- * @package Maropost\Api
+ * @package mataluis2k\marapost
  */
 class ProductAndRevenue
 {
@@ -54,7 +54,7 @@ class ProductAndRevenue
      * @param string $orderDateTime uses the format: "YYYY-MM-DDTHH:MM:SS-05:00"
      * @param string $orderStatus
      * @param string $originalOrderId sets the original_order_id field
-     * @param array $orderItems an array of \Maropost\Api\InputTypes\OrderItemInput objects.
+     * @param array $orderItems an array of \mataluis2k\marapost\InputTypes\OrderItemInput objects.
      * @param array|null $customFields associative array where the key (string) represents the field name and the value is the field value
      * @param array|null $addTags simple array of tags to add (scalar values)
      * @param array|null $removeTags simple array of tags to remove (scalar values)

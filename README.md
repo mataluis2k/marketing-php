@@ -471,7 +471,7 @@ The specific APIs contained are:
      * `$orderDateTime`: uses the format: "YYYY-MM-DDTHH:MM:SS-05:00"
      * `$orderStatus`
      * `$originalOrderId`: sets the original_order_id field
-     * `$orderItems` an array of \Maropost\Api\InputTypes\OrderItemInput objects.
+     * `$orderItems` an array of \mataluis2k\marapost\InputTypes\OrderItemInput objects.
      * `$customFields` associative array where the key (string) represents the field name and the value is the field value
      * `$addTags` simple array of tags to add (scalar values)
      * `$removeTags` simple array of tags to remove (scalar values)

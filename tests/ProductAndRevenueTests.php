@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use \Maropost\Api\Abstractions\OperationResult;
-use \Maropost\Api\InputTypes\OrderItemInput;
-use \Maropost\Api\ProductAndRevenue;
+use \mataluis2k\marapost\Abstractions\OperationResult;
+use \mataluis2k\marapost\InputTypes\OrderItemInput;
+use \mataluis2k\marapost\ProductAndRevenue;
 
 final class ProductAndRevenueTests extends TestCase
 {

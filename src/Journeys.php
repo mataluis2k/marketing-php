@@ -1,14 +1,14 @@
 <?php
 
-namespace Maropost\Api;
+namespace mataluis2k\marapost;
 
-use Maropost\Api\ResultTypes\GetResult;
-use Maropost\Api\Abstractions\Api;
-use Maropost\Api\Abstractions\OperationResult;
+use mataluis2k\marapost\ResultTypes\GetResult;
+use mataluis2k\marapost\Abstractions\Api;
+use mataluis2k\marapost\Abstractions\OperationResult;
 
 /**
  * Class Journeys
- * @package Maropost\Api
+ * @package mataluis2k\marapost
  */
 class Journeys
 {

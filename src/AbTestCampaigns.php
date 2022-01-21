@@ -1,15 +1,15 @@
 <?php
 
-namespace Maropost\Api;
+namespace mataluis2k\marapost;
 
-use Maropost\Api\Abstractions\OperationResult;
-use Maropost\Api\Abstractions\Api;
+use mataluis2k\marapost\Abstractions\OperationResult;
+use mataluis2k\marapost\Abstractions\Api;
 use Httpful\Request;
-use Maropost\Api\ResultTypes\GetResult;
+use mataluis2k\marapost\ResultTypes\GetResult;
 
 /**
  * Class AbTestCampaigns
- * @package Maropost\Api
+ * @package mataluis2k\marapost
  */
 class AbTestCampaigns
 {

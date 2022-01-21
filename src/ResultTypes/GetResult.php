@@ -1,13 +1,13 @@
 <?php
 
-namespace Maropost\Api\ResultTypes;
+namespace mataluis2k\marapost\ResultTypes;
 
-use Maropost\Api\Abstractions\OperationResult;
+use mataluis2k\marapost\Abstractions\OperationResult;
 use Httpful\Response;
 
 /**
  * Maps an Httpful Response onto an OperationResult.
- * @package Maropost\Api\ResultTypes\Reports
+ * @package mataluis2k\marapost\ResultTypes\Reports
  */
 class GetResult extends OperationResult
 {

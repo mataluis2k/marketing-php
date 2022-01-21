@@ -1,13 +1,13 @@
 <?php
 
-namespace Maropost\Api\Abstractions;
+namespace mataluis2k\marapost\Abstractions;
 
 use Httpful\Request;
-use Maropost\Api\ResultTypes\GetResult;
+use mataluis2k\marapost\ResultTypes\GetResult;
 
 /**
  * Trait Api
- * @package Maropost\Api\Abstractions
+ * @package mataluis2k\marapost\Abstractions
  */
 trait Api {
 

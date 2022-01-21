@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use \Maropost\Api\Abstractions\OperationResult;
-use \Maropost\Api\Contacts;
+use \mataluis2k\marapost\Abstractions\OperationResult;
+use \mataluis2k\marapost\Contacts;
 
 final class ContactsTests extends TestCase
 {

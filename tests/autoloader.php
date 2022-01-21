@@ -143,4 +143,4 @@ class Psr4AutoloaderClass
 
 $loader = new Psr4AutoloaderClass;
 $loader->register();
-$loader->addNamespace('Maropost\Api', '../src');
+$loader->addNamespace('mataluis2k\marapost', '../src');

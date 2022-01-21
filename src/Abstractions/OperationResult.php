@@ -1,10 +1,10 @@
 <?php
 
-namespace Maropost\Api\Abstractions;
+namespace mataluis2k\marapost\Abstractions;
 
 /**
  * Class OperationResult
- * @package Maropost\Api\Abstractions
+ * @package mataluis2k\marapost\Abstractions
  */
 abstract class OperationResult
 {

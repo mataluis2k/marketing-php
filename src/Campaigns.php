@@ -1,13 +1,13 @@
 <?php
 
-namespace Maropost\Api;
+namespace mataluis2k\marapost;
 
-use Maropost\Api\Abstractions\Api;
-use Maropost\Api\Abstractions\OperationResult;
+use mataluis2k\marapost\Abstractions\Api;
+use mataluis2k\marapost\Abstractions\OperationResult;
 
 /**
  * Class Campaigns
- * @package Maropost\Api
+ * @package mataluis2k\marapost
  */
 class Campaigns
 {

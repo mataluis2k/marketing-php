@@ -1,9 +1,9 @@
 <?php
 
-namespace Maropost\Api\InputTypes;
+namespace mataluis2k\marapost\InputTypes;
 
-use Maropost\Api\Abstractions\OperationResult;
-use Maropost\Api\ResultTypes\GetResult;
+use mataluis2k\marapost\Abstractions\OperationResult;
+use mataluis2k\marapost\ResultTypes\GetResult;
 
 class OrderItemInput
 {
