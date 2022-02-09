@@ -1,15 +1,15 @@
 <?php
 
-namespace mataluis2k\marapost;
+namespace mataluis2k\maropost;
 
-use mataluis2k\marapost\Abstractions\Api;
-use mataluis2k\marapost\InputTypes\KeyValue;
-use mataluis2k\marapost\ResultTypes\GetResult;
-use mataluis2k\marapost\Abstractions\OperationResult;
+use mataluis2k\maropost\Abstractions\Api;
+use mataluis2k\maropost\InputTypes\KeyValue;
+use mataluis2k\maropost\ResultTypes\GetResult;
+use mataluis2k\maropost\Abstractions\OperationResult;
 
 /**
  * Class RelationalTables
- * @package mataluis2k\marapost
+ * @package mataluis2k\maropost
  */
 class RelationalTables
 {
@@ -54,6 +54,11 @@ class RelationalTables
         return $this->_post("show", [], $object);
     }
 
+    public function show2($array) : OperationResult
+    {
+        //$object = (object)array("record" => (object)array($idFieldName => $idFieldValue));
+        return $this->_post("show", [], $array);
+    }
     /**
      * Adds a record to the Relational Table.
      *
@@ -72,6 +77,12 @@ class RelationalTables
 	    return $this->_post("create", [], $object);
 	}
 
+    public function create2($object) : OperationResult
+	{
+         print_r($object);
+
+	    return $this->_post("create", [], $object);
+	}
     /**
      * Updates a record in the Relational Table.
      *
@@ -91,6 +102,12 @@ class RelationalTables
         return $this->_put("update", [], (object)$keyValues);
     }
 
+
+    public function update2($object) : OperationResult
+    {
+
+        return $this->_put("update", [],$object);
+    }
     /**
      * Creates or updates a record in the Relational Table.
      *
@@ -107,6 +124,11 @@ class RelationalTables
             $array[$keyValue->key] = $keyValue->value;
         }
         $object->record = (object)$array;
+        return $this->_put("upsert", [], $object);
+    }
+
+    public function push($object) : OperationResult
+    {        
         return $this->_put("upsert", [], $object);
     }
 
@@ -139,7 +161,9 @@ class RelationalTables
      */
     private function url(string $overrideResource = null) : string
     {
-        return 'https://rdb.maropost.com/'.$this->accountId.'/'.$this->resource;
+        return 'https://' . $this->auth_token . '.tables.maropost.com/' .$this->resource . "s";
+        //return 'https://rdb.maropost.com/'.$this->accountId.'/'.$this->resource;
+        //return ' https://api.maropost.com/relational_tables/'.$this->accountId.'/'.$this->resource;
     }
 
     /**
